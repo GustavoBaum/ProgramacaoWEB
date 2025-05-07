@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="js/site.js" defer></script>
+    <title>Página Cadastro</title>
+</head>
+<body style="background-image: url(imagens/blog-cisslive-layout-de-supermercado.webp); background-position: center center; background-size: cover;">
+    <div class="container">
+        <h2>Cadastro</h2>
+        <a href="site.html"><img src="imagens/logotipo.avif" alt="Logotipo do mercado"></a>
+        <form>
+            <div class="form_group">
+                <label for="nome">Nome</label>
+                <input type="text" id="IDname" class="ClassNome" placeholder="Seu nome" autofocus required>
+            </div>
+            <div class="form_group">
+                <label for="email">Email</label>
+                <input type="text" id="IDemail" class="ClassEmail" placeholder="Seu email" autofocus required>
+            </div>
+            <div class="form_group">
+                <label for="dataNascimento">Data de nascimento</label>
+                <input type="date" id="IDdataNascimento" class="ClassDataNascimento" style="color: grey;" autofocus required>
+            </div>  
+            <div class="form_group">
+                <label for="password">Senha</label>
+                <input type="password" id="IDpassword1" class="ClassPassword1" placeholder="Sua senha" autofocus required>
+            </div>
+            <div class="form_group">
+                <label for="password">Repetir senha</label>
+                <input type="password" id="IDpassword2" class="ClassPassword2" placeholder="Sua senha" autofocus required>
+            </div>
+            <div class="form_group">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

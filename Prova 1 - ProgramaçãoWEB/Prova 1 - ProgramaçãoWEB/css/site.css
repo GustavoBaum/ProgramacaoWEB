@@ -1,0 +1,192 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #67b329;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#header {
+    background-color: rgb(247, 243, 243);
+    color: white;
+    padding: 1em 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2px solid #555; /*Adiciona borda inferior ao cabeçalho*/
+    border-color: 2px solid #e2e2e2;
+}
+
+#IDheader_h1 {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.884);
+}
+
+#IDheader_img {
+    height: 80px;
+    margin-right: 5px;
+}
+
+/*#IDlogin_link a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 1em;
+    border: 1px solid grey;
+    border-radius: 6px;
+    margin-top: 40px;
+    position: relative;
+    top: -30px;
+}*/
+
+.login_link a:hover {
+    background-color: #555;
+}
+
+#navigation {
+    background-color: #ddd;
+    padding: 0.5em 0;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+#navigation_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+#natigation_item {
+    display: inline;
+    margin: 0 1em;
+}
+
+.container {
+    width: 90%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+    border: 1px solid #ccc; /*Adiciona borda ao container principal*/
+    border-radius: 8px; /*Adiciona um leve aredondamento*/
+}
+
+.main_content {
+    text-align: center;
+}
+
+#registration_form {
+    text-align: left;
+    margin: 20px auto;
+    width: 300px;
+    border: 1px solid #eee; /*Adiciona uma borda sutil ao formulário*/
+    padding: 15px;
+    border-radius: 5px; 
+}
+
+#registraion_form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#registration_button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#registration_button:hover {
+    background-color: #4cae4c;
+}
+
+footer {
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    padding: 1em;
+    background-color: #212a53;
+    color: rgba(202, 198, 198, 0.664);
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #1e223d; /*Adiciona borda superior ao rodapé*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+footer span {
+    display: flex;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    font-size: 12px;
+}
+
+.footer_links {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer_links a {
+    color: black;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer_links a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+#user_icon {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.button {
+    background-color: white;
+    color: white;
+    padding: 1px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.button:hover {
+    text-decoration: underline;
+    background-color: #3a3a3a;
+}
+
+.button:active {
+    text-decoration: black;
+}
