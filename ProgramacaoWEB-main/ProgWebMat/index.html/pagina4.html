@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 4</title>
+    <style>
+        input {
+            border-width: 0px;
+            border-bottom: 1px solid black;
+        }
+
+        input[type=password] {
+            background-color: yellow;
+        }
+
+        input[type=email]:focus {
+            background-color: aqua;
+        }
+
+        input[type=url]:focus {
+            width: 50vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Página 4</h3>
+    <p>
+        <a href="pagina3.html">Página 3</a>
+    </p>
+    <!--Criação de formulários-->
+    <p>
+        <!--Método Get
+            Utilizar em 100% dos casos o método post-->
+    <form action="#" method="get">
+        <label for="IDnome">Login: </label><input type="text" name="login" id="IDnome" placeholder="Informe login: "
+            autofocus required>
+        <br><label for="IDsenha">Senha: </label><input type="password" name="senha" id="IDsenha"
+            placeholder="Informe senha: " required>
+        <br><label for="IDidade">Idade: </label><input type="number" name="idade" id="IDidade"
+            placeholder="Informe idade" max="120" min="0">
+        <br><input type="text" name="campo1" value="Campo1" disabled><input type="text" name="campo2" value="Campo2"
+            readonly><input type="hidden" name="campo3" value="Campo3">
+        <br><label for="IDdtNascimento">Data nascimento: </label><input type="date" name="dtNascimento"
+            id="IDdtNascimento">
+        <br><label for="IDdtCompleta">Data completa: </label><input type="datetime-local" name="dtCompleta"
+            id="IDdtCompleta">
+        <br><label for="IDemail">Email: </label><input type="email" name="email" id="IDemail" placeholder="Email: ">
+        <br><label for="IDurl">URL: </label><input type="url" name="url" id="IDurl" placeholder="URL: ">
+        <br><label for="manter">Manter conectado: </label><input type="checkbox" name="checkbox" id="manter" value="S">
+
+        <br><label for="IDcidade1">Blumenau</label>
+        <input type="radio" name="cidade" id="IDcidade1" value="BNU" checked>
+        <br><label for="IDcidade2">Gaspar</label>
+        <input type="radio" name="cidade" id="IDcidade2" value="GPR">
+        <br><label for="IDcidade3">Indaial</label>
+        <input type="radio" name="cidade" id="IDcidade3" value="IND">
+
+        <br><label for="IDcarro">Carro: </label>
+        <select name="carro" id="IDcarro">
+            <option value="VW">Volkswagen</option>
+            <option value="F">Ford</option>
+            <option value="G">General Motors</option>
+            <option value="F">Fiat</option>
+        </select>
+
+        <br><label for="IDparagrafo"> Resumo: </label>
+        <textarea name="paragrafo" id="IDparagrafo" rows="10" cols="50">
+
+        </textarea>
+
+        <br><label for="IDfile">Informe o arquivo: </label>
+        <input type="file" name="file" id="IDfile">
+
+        <br><input type="submit" value="Autenticar">
+        <br><input type="reset" value="Limpar formulário">
+    </form>
+    </p>
+</body>
+
+</html>

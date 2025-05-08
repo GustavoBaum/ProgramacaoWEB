@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript 2</title>
+    <script src="classePessoa.js"></script>
+</head>
+<body>
+
+    <div id="horaAtual"></div>
+    <script>
+
+        
+        setInterval(() => document.getElementById('horaAtual').innerHTML = new Date(), 1000);
+
+
+        const vetor1 = [1, 2, 3, 4, 5, 6];
+        /*var vPosicao1 = vetor1[0];
+        var vPosicao2 = vetor1[1];
+        var vPosicao3 = vetor1[2];*/
+        var [vPos1, vPos2, vPos3,,, vPos6] = vetor1;
+
+        const cProfessor = new Professor('Marcos', 'Cardoso', 'Blumenau', 'DSC');
+        var {nome, sobrenome, cidade, departamento} = cProfessor;
+
+        function operacoesaBasicas(pNum1, pNum2) {
+            return [(pNum1+pNum2),(pNum-pNum2),(pNum1*pNum2),(pNum1/pNum2)];
+        }
+
+        var [vSoma, vSubtrai, vMultiplica, vDivide] = operacoesaBasicas(3,2);
+
+        const vetor2 = [7, 8, 9];
+
+        var vetor3 = [...vetor1, ...vetor2];
+
+        var [var1, var2, ...vetSobra] = vetor3;
+
+        const cAluno = new Aluno('Dalton', 'Reis', 'Itajaí', 'BCC');
+        var vPessoa = {...cProfessor, ...cAluno};
+    </script>
+    <script type="module">
+        import {ProdutoPreco, ProdutoNF} from './classNF.js';
+
+        var vProdPreco = new ProdutoPreco('Produto1', 1);
+        window.alert(vProdPreco.nome+' '+vProdPreco.preco);
+    </script>
+</body>
+</html>

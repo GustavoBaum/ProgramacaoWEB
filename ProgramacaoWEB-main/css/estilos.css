@@ -1,0 +1,284 @@
+@media screen and (max-width: 412px) {
+    #menuEstreito {
+        display: block;
+    }
+    #menuLargo {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 413px) {
+    #menuEstreito {
+        display: none;
+    }
+    #menuLargo {
+        display: block;
+    }
+}
+
+body {
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    font-size: large;
+    background-color: lightblue;
+    padding: 10px;
+    font-weight: bold;
+    /*font-weight: bolder; -- comentário*/
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+nav {
+    background-color: lightskyblue;
+    padding: 10px;
+}
+
+nav img {
+    width: 24px;
+}
+
+nav menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+nav li {
+    list-style: none;
+    padding-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.menuPrincipal li {
+    display: inline-block;
+}
+
+.subMenu {
+    background-color: lightblue;
+    padding-top: 5px;
+    position: fixed;
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.menuPrincipal li:hover .subMenu {
+    display: block;
+}
+
+.subMenu li {
+    display: block;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+.class2 {
+    font-weight: bold;
+    background-color: aquamarine !important;
+}
+
+.classe1 {
+    background-color: yellow;
+}
+
+p.class1 {
+    font-size: italic;
+}
+
+#IDsection {
+    font-size: 1.5em;
+}
+
+#IDdiv {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px, solid, black;
+    width: 50%;
+    height: 50vh;
+}
+
+.big-shoulders-stencil-fonte> {
+    font-family: "Big Shoulders Stencil", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#div_pai {
+    border: 1px solid blue;
+    height: 50vh;
+
+    position: relative;
+}
+
+#div_filho {
+    border: 1px solid red;
+    width: 50vw;
+    height: 25vh;
+
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+.container img {
+    position: relative;
+}
+
+.container img {
+    opacity: 0.3;
+}
+
+.topo_esc {
+    position: relative;
+    top: 10px;
+    left: 1opx;
+
+}
+
+.topo_dir {
+    position: relative;
+    top: 10px;
+    right: 1opx;
+
+}
+
+.chao_esc {
+    position: relative;
+    bottom: 10px;
+    left: 10px;
+}
+
+.chao_dir {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+}
+
+.centralizado {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+}
+
+.botao {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    text-decoration: underline;
+    background-color: green;
+}
+
+.botao:active {
+    background-color: red;
+}
+
+.tabela {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.tabela td,
+th {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.tabela tr:hover {
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.tabela td:hover {
+    background-color: darkgray;
+}
+
+.tabela td:active {
+    background-color: black;
+    color: white;
+}
+
+.tabela .info {
+    display: none;
+    position: fixed;
+    background-color: white;
+    font-size: 0.5em;
+    border: 1px solid black;
+}
+
+.tabela td:active .info {
+    visibility: block;
+}
+
+.lista li:first-child {
+    font-weight: bold;
+}
+
+.lista li:last-child {
+    font-weight: bold;
+    color: blue;
+}
+
+.tabela2 tr:nth-child(3) {
+    background-color: lightgreen;
+}
+
+/*odd -> numeros impares
+ even -> numeros pares
+   Xn -> aplica em numeros multiplos de X*/
+.tabela2 tr:nth-child(odd) {
+    background-color: lightgrey;
+}
+
+.flex-container {
+    background-color: blue;
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.flex-container > div {
+    background-color: gray;
+    width: 3em;
+    text-align: center;
+    margin: 10px;
+}
+
+.grid-container {
+    background-color: green;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /*grid-template-columns: 1fr 2fr 1fr;*/
+}
+
+.grid-container > div {
+    background-color: silver;
+    text-align: center;
+    width: 3em;
+    margin: 10px;
+}
