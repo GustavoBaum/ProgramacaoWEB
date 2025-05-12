@@ -1,0 +1,111 @@
+header {
+    background-color: lightblue;
+    font-size: larger 100%;
+}
+
+form {
+    background-color: lightgray;
+    border: black;
+}
+
+button {
+    color: white;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    height: 40px;
+}
+
+button {
+    background-color: green;
+    color: white;
+}
+
+exemplo_relative {
+    position: relative;
+    bottom: 30px;
+}
+
+#div_pai{
+    border: 1px solid blue;
+    height: 50vh;
+
+    position: relative;
+}
+
+#div_filho{
+    border: 1px solid red;
+    width: 50vw;
+    height: 25vh;
+
+    position: absolute;
+    left: 30px;
+    top: 50px;
+}
+
+.container img {
+    position: relative;
+}
+
+.container img {
+    opacity: 0.3;
+}
+
+.topo_esc {
+    position: absolute;
+    top: 10px;
+    left: 1opx;
+
+}
+
+.topo_dir {
+    position: absolute;
+    top: 10px;
+    right: 1opx;
+
+}
+
+.chao_esc{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.chao_dir{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.centralizado {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+}
+
+.botao {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.botao:hover {
+    text-decoration: underline;
+    background-color: green;
+}
+
+.botao:active {
+    background-color: red;
+}
