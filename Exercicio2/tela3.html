@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela 3</title>
+
+    <link rel="stylesheet" href="tela3.css">
+
+    <script>
+        var contador = 0;
+        setInterval(function () {
+            contador++;
+            document.getElementById('contador').innerText = 'Contador: ' + contador;
+        }, 1000);
+
+        var itens = document.querySelectorAll('#listaComidas li');
+        for (var i = 0; i < itens.length; i++) {
+            itens[i].addEventListener('click', function () {
+                alert('Você clicou em: ' + this.innerText);
+            });
+        }
+
+        var celulas = document.querySelectorAll('td');
+        for (var i = 0; i < celulas.length; i++) {
+            celulas[i].addEventListener('click', function () {
+                this.style.backgroundColor = 'red';
+            });
+        }
+    </script>
+</head>
+
+<body>
+
+    <div id="contador">Contador: 0</div>
+
+    <ul id="listaComidas">
+        <li>Pizza</li>
+        <li>Strogonoff</li>
+        <li>Sushi</li>
+        <li>Hambúrguer</li>
+        <li>Churrasco</li>
+    </ul>
+
+    <div class="hover-div">Passe o mouse aqui</div>
+
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

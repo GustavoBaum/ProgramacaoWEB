@@ -1,0 +1,37 @@
+#contador {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hover-div {
+    width: 200px;
+    height: 100px;
+    background-color: lightgray;
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 100px;
+    margin-bottom: 20px;
+}
+
+.hover-div:hover {
+    background-color: lightblue;
+}
+
+table,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
